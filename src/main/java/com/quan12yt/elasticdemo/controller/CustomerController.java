@@ -38,7 +38,7 @@ public class CustomerController {
         return customerService.findCustomersByNameContain(name);
     }
 
-    @PostMapping("/api/customers/age")
+    @PostMapping("/api/customers/ages")
     public List<Customer> findByNameAndAge(@RequestParam String name, @RequestParam Integer age) {
         return customerService.findByNameAndAge(name, age);
     }
